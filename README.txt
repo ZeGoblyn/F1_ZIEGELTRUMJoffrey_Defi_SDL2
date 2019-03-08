@@ -1,20 +1,27 @@
-This library is distributed under the terms of the zlib license:
-
-  This software is provided 'as-is', without any express or implied
-  warranty.  In no event will the authors be held liable for any damages
-  arising from the use of this software.
-
-  Permission is granted to anyone to use this software for any purpose,
-  including commercial applications, and to alter it and redistribute it
-  freely, subject to the following restrictions:
-
-  1. The origin of this software must not be misrepresented; you must not
-     claim that you wrote the original software. If you use this software
-     in a product, an acknowledgment in the product documentation would be
-     appreciated but is not required.
-  2. Altered source versions must be plainly marked as such, and must not be
-     misrepresented as being the original software.
-  3. This notice may not be removed or altered from any source distribution.
-
-The source is available from the SDL website:
-http://www.libsdl.org/projects/SDL_image
+Différences entre SDL et SDL 2.
+  Mis à part l'age "avancé" de SDL premier du nom, et l'arrêt de son entretien 
+  par ces crateurs, la majeure différence avec son succéseur (SDL 2), est que ce 
+  dernier est supporter par un plus grand nombres de Système d'Exploitation et bénéficie 
+  de plus de possibilitées  de réalisation.
+ 
+Pourquoi SDL_image?
+  Dans son format d'origine, SDL 2 ne gère que les images au format Bitmap. 
+  L'ajout de la bibliothèque SDL2_image permet au compilateur de gérer les formats d'images autres.
+  (Jpg, Png, etc.).
+  
+Etat du développement.
+  Le programme affiche des formes géométriques en là présence de deux lignes rouges formant 
+  un "viseur" fixer sur le Bitmap du Rider fournit avec les assets. L'Hélicoptère est fonctionnel,
+  soit déplaçable et animé.
+  
+Commentaire et ressentis à chaud.
+  L'ensemble de SDL2 à été compliquer à prendre en mains. Le site de tutoriel distribue beaucoup d'informations
+  en très peu de temps, ainsi que de nombreuses lignes de commandes et il à été compliqué de cerner en une fois
+  ce qui était vraiment utile pour le projet. 
+  Le plus complèxe à également été de comprendre comment marche la mise en place des frames et l'affichage de l'hélico,
+  les explications étant encore une fois asser floues.
+  
+Notes:
+  L'hélicoptère ce déplace en se servant de ZQSD.
+  Il est possible qu'il faille fermer et relancer le programme pour afficher correctement les images
+  si celui-ci est lancer depuis FPC.
